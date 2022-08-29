@@ -1,0 +1,31 @@
+.eigth-container {
+  width: 94%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.eigth-container h1 {
+  margin: 35px 0;
+  padding: 1.5rem;
+  font-size: 2.4rem;
+  overflow: hidden;
+}
+
+.eigth-container h1 span {
+  color: #5084f9;
+}
+
+.eigth-container video {
+  width: 80%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.eigth-container video source {
+  width: 100%;
+  height: auto;
+}

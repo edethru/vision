@@ -1,0 +1,132 @@
+.total-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-container {
+  width: 94%;
+  height: calc(100vh - 114px);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.iframe-hero {
+  border-radius: 8px;
+  max-width: 560px;
+  height: auto;
+}
+
+.video-container {
+  flex: 50%;
+  width: 560px;
+  height: auto;
+  overflow: hidden;
+}
+
+.text-hero {
+  max-width: 40vw;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  /* text-align: center; */
+  flex: 50%;
+  overflow: hidden;
+}
+
+.text-hero h1 {
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  overflow: hidden;
+}
+
+.hero-btn {
+  font-size: 1.8rem;
+  margin: 30px 0;
+  width: 314px;
+  text-align: start;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #5084f9;
+  line-height: 1.4;
+}
+
+.hero-clickables {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  overflow: hidden;
+}
+
+.right-arrow img {
+  width: 48px;
+  height: 48px;
+}
+
+.right-arrow {
+  cursor: pointer;
+  width: 48px;
+  border: none;
+  margin: 0;
+  height: 48px;
+  overflow: hidden;
+}
+
+@media (max-width: 1050px) {
+  .text-hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero-clickables .hero-btn {
+    font-size: 1.3rem;
+  }
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-container .iframe-hero {
+    width: 430px;
+    height: auto;
+  }
+}
+
+@media (max-width: 820px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    min-height: calc(100vh - 114px);
+    height: auto;
+  }
+  .text-hero {
+    max-width: 60vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-btn {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-hero {
+    width: auto;
+  }
+  .hero-btn {
+    width: auto;
+  }
+  .right-arrow img {
+    width: 16px;
+    height: auto;
+  }
+  .video-container .iframe-hero {
+    width: 375px;
+  }
+}

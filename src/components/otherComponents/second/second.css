@@ -1,0 +1,25 @@
+.second-container {
+  width: 96%;
+  margin: auto;
+  min-height: 55vh;
+  background-color: rgb(196, 196, 196);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+}
+.second-container img {
+  margin: 35px;
+}
+
+img {
+  cursor: initial;
+}
+
+@media (max-width: 576px) {
+  .second-container img {
+    width: 75px;
+    height: auto;
+  }
+}
