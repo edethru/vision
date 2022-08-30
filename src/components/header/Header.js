@@ -19,14 +19,15 @@ const Header = () => {
   };
 
   return (
-    <div className="header-container" data-aos="fade-down">
-      <div className="logo-img">
+    <div className="header-container">
+      <div className="logo-img" data-aos="fade-down">
         <img
           src="https://uploads-ssl.webflow.com/615a8096dd69ecb979d5ea68/61603eebe2de9c6ea99ba69a_pensil%20logo%20svg.svg"
           alt="Logo for pencil.in"
         />
       </div>
-      <nav className="navigation-menu">
+
+      <nav className="navigation-menu" data-aos="fade-down">
         <ul>
           <li>Use case</li>
           <li>Resources</li>
@@ -35,6 +36,7 @@ const Header = () => {
           <li className="btn-for-signup">Try for free</li>
         </ul>
       </nav>
+
       {isMobileNavOpen ? (
         <ImCross
           className="hamburger-icon cross"
@@ -50,21 +52,23 @@ const Header = () => {
 
       {isMobileNavOpen && (
         <>
-          <nav
-            // animate={{ x: "100%" }}
-            // animate={isMobileNavOpen ? "open" : "close"}
-            // variants={vairants}
-            // transition={{ duration: 0.5 }}
-            className="mobile-nav-menu"
-          >
-            <ul>
-              <li>Use case</li>
-              <li>Resources</li>
-              <li>Pricing</li>
-              <li className="btn-for-headers">Log in</li>
-              <li className="btn-for-signup">Try for free</li>
-            </ul>
-          </nav>
+          <div className="whole-nav" data-aos="fade-right">
+            <nav
+              // animate={{ x: "100%" }}
+              // animate={isMobileNavOpen ? "open" : "close"}
+              // variants={vairants}
+              // transition={{ duration: 0.5 }}
+              className="mobile-nav-menu"
+            >
+              <ul>
+                <li>Use case</li>
+                <li>Resources</li>
+                <li>Pricing</li>
+                <li className="btn-for-headers">Log in</li>
+                <li className="btn-for-signup">Try for free</li>
+              </ul>
+            </nav>
+          </div>
         </>
       )}
     </div>

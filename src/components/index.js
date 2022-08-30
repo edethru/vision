@@ -8,3 +8,4 @@ export { default as Sixth } from "./otherComponents/sixth/Sixth";
 export { default as Seventh } from "./otherComponents/seventh/Sevneth";
 export { default as Eighth } from "./otherComponents/eighth/Eighth";
 export { default as Ninth } from "./otherComponents/ninth/Ninth";
+export { default as Tenth } from "./otherComponents/tenth/Tenth";

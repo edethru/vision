@@ -9,6 +9,7 @@ import {
   Second,
   Seventh,
   Sixth,
+  Tenth,
   Third,
 } from "./components";
 
@@ -25,6 +26,7 @@ function App() {
       <Seventh />
       <Eighth />
       <Ninth />
+      <Tenth />
     </div>
   );
 }

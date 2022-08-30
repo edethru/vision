@@ -66,8 +66,9 @@
   height: auto;
 }
 
-.mobile-nav-menu {
+.whole-nav {
   position: absolute;
+  z-index: 10000;
   top: 68px;
   height: calc(100vh - 68px);
   background-color: #fff;
