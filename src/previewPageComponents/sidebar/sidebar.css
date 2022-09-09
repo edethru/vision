@@ -1,0 +1,52 @@
+.sidebar {
+  position: fixed;
+  width: 15rem;
+  height: 100%;
+}
+
+.sidebar .tag {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  font-weight: 900;
+}
+
+.links-preview ul {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.links-preview ul .active {
+  border-right: 0.3rem solid #4070f4;
+}
+
+.links-preview ul .active {
+  color: #4070f4;
+}
+
+.links-preview ul li {
+  margin: 0.6rem 0;
+  /* border-right: 0.3rem solid transparent; */
+  list-style-type: none;
+  transition: ease-in-out 0.3s;
+}
+
+.links-preview ul li:hover {
+  border-right-color: #4070f4;
+}
+
+.links-preview ul li:hover .link {
+  color: #4070f4;
+}
+
+.links-preview ul .link {
+  margin-left: 3rem;
+  text-decoration: none;
+  color: rgb(93, 98, 145);
+  font-size: 1.1rem;
+  display: flex;
+  gap: 1rem;
+}

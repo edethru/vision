@@ -1,3 +1,39 @@
 .App {
   width: 100vw;
+  /* position: relative; */
+}
+
+.preview-container {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  /* border: 1px solid black; */
+  /* border-radius: 6px; */
+  color: black;
+  text-decoration: none;
+}
+
+.preview-container img {
+  width: 28px;
+  height: 28px;
+  margin: 0 10px;
+  transition: transform 0.7s ease-in-out;
+}
+
+.preview-container:hover img {
+  transform: rotate(360deg);
+}
+
+.preview-container-app {
+  width: 100vw;
+  height: 100vh;
+  background-color: #4070f4;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

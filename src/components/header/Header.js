@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./header.css";
 import { ImCross } from "react-icons/im";
 import { motion } from "framer-motion";
 import "aos/dist/aos.css";
 import Aos from "aos";
+import { PensilContext } from "../../context/PensilContext";
 
 const Header = () => {
   useEffect(() => {
@@ -13,6 +14,7 @@ const Header = () => {
   }, []);
 
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const { header } = useContext(PensilContext);
 
   const changeMobileNavOpenState = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
@@ -21,19 +23,16 @@ const Header = () => {
   return (
     <div className="header-container">
       <div className="logo-img" data-aos="fade-down">
-        <img
-          src="https://uploads-ssl.webflow.com/615a8096dd69ecb979d5ea68/61603eebe2de9c6ea99ba69a_pensil%20logo%20svg.svg"
-          alt="Logo for pencil.in"
-        />
+        <img src={header.logoUrl} alt="Logo for pencil.in" />
       </div>
 
       <nav className="navigation-menu" data-aos="fade-down">
         <ul>
-          <li>Use case</li>
-          <li>Resources</li>
-          <li>Pricing</li>
-          <li className="btn-for-headers">Log in</li>
-          <li className="btn-for-signup">Try for free</li>
+          <li>{header.nav1}</li>
+          <li>{header.nav2}</li>
+          <li>{header.nav3}</li>
+          <li className="btn-for-headers">{header.nav4}</li>
+          <li className="btn-for-signup">{header.nav5}</li>
         </ul>
       </nav>
 
