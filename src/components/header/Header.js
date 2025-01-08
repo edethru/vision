@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./header.css";
 import { ImCross } from "react-icons/im";
-import { motion } from "framer-motion";
 import "aos/dist/aos.css";
 import Aos from "aos";
 import { PensilContext } from "../../context/PensilContext";
@@ -23,7 +22,7 @@ const Header = () => {
   return (
     <div className="header-container">
       <div className="logo-img" data-aos="fade-down">
-        <img src={header.logoUrl} alt="Logo for pencil.in" />
+        <img src={header.logoUrl} alt="Logo for Edethru.com" />
       </div>
 
       <nav className="navigation-menu" data-aos="fade-down">

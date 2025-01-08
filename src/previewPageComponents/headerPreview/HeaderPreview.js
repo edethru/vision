@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Dashboard from "../dashboard/Dashboard";
+// import Dashboard from "../dashboard/Dashboard";
 import Sidebar from "../sidebar/Sidebar";
 import "./headerPreview.css";
 

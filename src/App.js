@@ -15,7 +15,6 @@ import {
 import { Routes, Route, Link } from "react-router-dom";
 import SettingsImg from "./assets/images/icons8-settings-48.png";
 import HeaderPreview from "./previewPageComponents/headerPreview/HeaderPreview";
-import { links } from "./previewPageComponents/sidebar/Sidebar";
 import Dashboard, {
   HeroDashboard,
 } from "./previewPageComponents/dashboard/Dashboard";
@@ -23,10 +22,10 @@ import Dashboard, {
 const Home = () => {
   return (
     <>
-      <Link className="preview-container" to="/preview-and-publish/header">
+      {/* <Link className="preview-container" to="/preview-and-publish/header">
         <h4>Preview the site</h4>
         <img src={SettingsImg} alt="" />
-      </Link>
+      </Link> */}
       <Header />
       <Hero />
       <Second />
@@ -55,10 +54,10 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/preview-and-publish" element={<PreviewPage />}>
+        {/* <Route path="/preview-and-publish" element={<PreviewPage />}>
           <Route path="header" element={<Dashboard />} />
           <Route path="hero" element={<HeroDashboard />} />
-        </Route>
+        </Route> */}
       </Routes>
     </div>
   );
